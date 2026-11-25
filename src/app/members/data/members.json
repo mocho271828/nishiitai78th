@@ -1,0 +1,14 @@
+[
+  {
+    "role": "大会事務局（見本）",
+    "email": "office@example.org"
+  },
+  {
+    "role": "競技担当（見本）",
+    "email": "games@example.org"
+  },
+  {
+    "role": "会場担当（見本）",
+    "email": "venues@example.org"
+  }
+]

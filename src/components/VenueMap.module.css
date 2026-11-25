@@ -1,0 +1,24 @@
+.mapContainer {
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    background-color: #e6f1ed;
+    background-image: linear-gradient(#bed7cf 1px, transparent 1px),
+        linear-gradient(90deg, #bed7cf 1px, transparent 1px);
+    background-size: 32px 32px;
+}
+
+.marker {
+    background: #145da0;
+    border: 2px solid white;
+    border-radius: 50%;
+    box-shadow: 0 1px 4px #10263880;
+}
+
+.popupTitle {
+    font-weight: 700;
+}
+
+.popupDesc {
+    font-size: 0.875rem;
+}

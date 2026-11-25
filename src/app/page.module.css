@@ -1,0 +1,255 @@
+.section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #020617;
+    /* slate-950 */
+}
+
+.bgImageContainer {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.bgImageWrapper {
+    position: relative;
+    width: 100%;
+    height: 120%;
+    top: -10%;
+}
+
+.overlayGradient {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: linear-gradient(to bottom, rgba(2, 6, 23, 0.7), rgba(15, 23, 42, 0.4), rgba(2, 6, 23, 0.9));
+    pointer-events: none;
+}
+
+.overlayRadial {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: radial-gradient(ellipse at center, rgba(30, 58, 138, 0.2), transparent, transparent);
+    pointer-events: none;
+    mix-blend-mode: overlay;
+}
+
+.contentWrapper {
+    margin-top: 2.5rem;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.contentInner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subtitle {
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 0.4em;
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    backdrop-filter: blur(12px);
+    background-color: rgba(255, 255, 255, 0.05);
+    display: inline-block;
+}
+
+@media (min-width: 768px) {
+    .subtitle {
+        font-size: 0.875rem;
+    }
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1.5rem;
+    line-height: 1.25;
+}
+
+@media (min-width: 768px) {
+    .title {
+        font-size: 4.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .title {
+        font-size: 6rem;
+    }
+}
+
+.gradientText {
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right, #93c5fd, white);
+}
+
+.buttonGroup {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .buttonGroup {
+        flex-direction: row;
+    }
+}
+
+.linkButton {
+    padding: 1rem 2rem;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    font-weight: 700;
+    border-radius: 9999px;
+    transition: all 0.3s;
+    display: inline-block;
+}
+
+.linkButton:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.05);
+}
+
+.condolenceLink {
+    padding: 0.5rem 0.25rem;
+    color: #bfdbfe;
+    font-weight: 700;
+    display: inline-block;
+    text-decoration: underline;
+    text-decoration-color: rgba(147, 197, 253, 0.7);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.4rem;
+    transition: color 0.3s, text-decoration-color 0.3s;
+}
+
+.condolenceLink:hover {
+    color: white;
+    text-decoration-color: white;
+}
+
+.scrollIndicator {
+    margin-top: 2.5rem;
+    position: absolute;
+    bottom: 2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.scrollText {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.5rem;
+}
+
+/* Features Section */
+.featuresSection {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background-color: #0f172a;
+    /* slate-900 */
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.card {
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(4px);
+    cursor: pointer;
+    transition: all 0.3s;
+    height: 100%;
+}
+
+.iconWrapper {
+    margin-bottom: 1rem;
+}
+
+.cardTitle {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    font-family: monospace;
+}
+
+.cardDesc {
+    color: #94a3b8;
+    /* slate-400 */
+    font-size: 0.875rem;
+}
+
+.textBlue {
+    color: #60a5fa;
+}
+
+.textRed {
+    color: #f87171;
+}
+
+.main {
+    min-height: 100vh;
+    background-color: #0f172a;
+    font-family: sans-serif;
+}
+
+/* Selection color */
+.main ::selection {
+    background-color: #ef4444;
+    color: white;
+}

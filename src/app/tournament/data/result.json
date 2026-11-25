@@ -1,0 +1,58 @@
+{
+  "basketball-men": {
+    "basketball_m_1": {
+      "status": "FINISHED",
+      "teamResults": {
+        "team-a": {
+          "score": 62,
+          "isWinner": true
+        },
+        "team-b": {
+          "score": 54,
+          "isWinner": false
+        }
+      }
+    },
+    "basketball_m_2": {
+      "status": "FINISHED",
+      "teamResults": {
+        "team-c": {
+          "score": 58,
+          "isWinner": false
+        },
+        "team-d": {
+          "score": 64,
+          "isWinner": true
+        }
+      }
+    }
+  },
+  "table-tennis-men": {
+    "final": {
+      "status": "LIVE",
+      "teamResults": {
+        "team-a": {
+          "score": 1
+        },
+        "team-b": {
+          "score": 0
+        }
+      }
+    }
+  },
+  "karate-kumite-men": {
+    "final": {
+      "status": "FINISHED",
+      "teamResults": {
+        "team-a": {
+          "score": 2,
+          "isWinner": false
+        },
+        "team-b": {
+          "score": 4,
+          "isWinner": true
+        }
+      }
+    }
+  }
+}

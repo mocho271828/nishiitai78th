@@ -1,0 +1,33 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Helper function: Check if requestor is whitelisted
+    function isWhitelisted() {
+      return request.auth != null && 
+             request.auth.token.email in get(/databases/$(database)/documents/settings/whitelist).data.emails;
+    }
+
+    // 1. Settings Document Rules
+    match /settings/{document} {
+      allow read: if request.auth != null; 
+      allow write: if false; 
+    }
+
+    // 2. Protected Data Rules
+    match /private_announcements/{docId} {
+      allow read: if isWhitelisted();
+      allow write: if false;
+    }
+  
+    // 3. Public Data Rules
+    match /games_result/{docId} {
+      allow read: if true; 
+    }
+
+    // 4. Entry Data Rules
+    match /entries/{entryId} {
+      allow create: if isWhitelisted();
+    }
+  }
+}

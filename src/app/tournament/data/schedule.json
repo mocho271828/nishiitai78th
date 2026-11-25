@@ -1,0 +1,154 @@
+{
+  "basketball-men": {
+    "name": "バスケットボール男子",
+    "rounds": [
+      {
+        "id": "semi",
+        "name": "準決勝",
+        "matches": [
+          {
+            "id": "basketball_m_1",
+            "nextMatchId": "basketball_m_final",
+            "startTime": "9月1日 09:00",
+            "teams": [
+              {
+                "id": "team-a",
+                "name": "サンプル大学A",
+                "univ": "サンプル大学A"
+              },
+              {
+                "id": "team-b",
+                "name": "サンプル大学B",
+                "univ": "サンプル大学B"
+              }
+            ]
+          },
+          {
+            "id": "basketball_m_2",
+            "nextMatchId": "basketball_m_final",
+            "startTime": "9月1日 11:00",
+            "teams": [
+              {
+                "id": "team-c",
+                "name": "サンプル大学C",
+                "univ": "サンプル大学C"
+              },
+              {
+                "id": "team-d",
+                "name": "サンプル大学D",
+                "univ": "サンプル大学D"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "final",
+        "name": "決勝",
+        "matches": [
+          {
+            "id": "basketball_m_final",
+            "nextMatchId": null,
+            "startTime": "9月1日 15:00",
+            "teams": [
+              {
+                "id": "basketball_winner_1",
+                "name": "準決勝1の勝者",
+                "univ": "準決勝1の勝者"
+              },
+              {
+                "id": "basketball_winner_2",
+                "name": "準決勝2の勝者",
+                "univ": "準決勝2の勝者"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "table-tennis-men": {
+    "name": "卓球男子",
+    "rounds": [
+      {
+        "id": "final",
+        "name": "決勝",
+        "matches": [
+          {
+            "id": "final",
+            "nextMatchId": null,
+            "startTime": "9月2日 13:00",
+            "teams": [
+              {
+                "id": "team-a",
+                "name": "サンプル大学A",
+                "univ": "サンプル大学A"
+              },
+              {
+                "id": "team-b",
+                "name": "サンプル大学B",
+                "univ": "サンプル大学B"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "table-tennis-women": {
+    "name": "卓球女子",
+    "rounds": [
+      {
+        "id": "final",
+        "name": "決勝",
+        "matches": [
+          {
+            "id": "final",
+            "nextMatchId": null,
+            "startTime": "9月2日 14:00",
+            "teams": [
+              {
+                "id": "team-c",
+                "name": "サンプル大学C",
+                "univ": "サンプル大学C"
+              },
+              {
+                "id": "team-d",
+                "name": "サンプル大学D",
+                "univ": "サンプル大学D"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "karate-kumite-men": {
+    "name": "空手男子組手",
+    "rounds": [
+      {
+        "id": "final",
+        "name": "決勝",
+        "matches": [
+          {
+            "id": "final",
+            "nextMatchId": null,
+            "startTime": "9月3日 11:00",
+            "teams": [
+              {
+                "id": "team-a",
+                "name": "サンプル大学A",
+                "univ": "サンプル大学A"
+              },
+              {
+                "id": "team-b",
+                "name": "サンプル大学B",
+                "univ": "サンプル大学B"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
